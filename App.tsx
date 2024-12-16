@@ -15,7 +15,9 @@ import {
   Text,
   useColorScheme,
   View,
+  Button,
 } from 'react-native';
+
 
 import {
   Colors,
@@ -71,6 +73,13 @@ function App(): React.JSX.Element {
       <ScrollView
         contentInsetAdjustmentBehavior="automatic"
         style={backgroundStyle}>
+        <Text >time to smile</Text>
+        <Button
+            onPress={() => {
+              console.log('You tapped the button!');
+            }}
+            title="Press Me"
+        />
         <Header />
         <View
           style={{
